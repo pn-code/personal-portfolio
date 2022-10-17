@@ -49,11 +49,14 @@ function App() {
         <img class='profile-picture' src={profilePic} alt="Duck"/>
         <div className='about--info'>
           <h2>About Me</h2>
-          <p>I am a Front-end Web Developer from Southern California. I like to create and
-            work on projects of all kinds. When I'm not coding, I like to ... well uhm... as you 
-            can see, I have a older brother.... so I've been formulating a masterplan to send 
-            him to Hueco Mundo with his boi / coding mentor, Justun. 
+          <p>I am a Front-End Web Developer from Southern California. I love to learn and work
+            on all sorts of projects. 
+            <br/>
+            <br/>
+            In my free time, I love spend time with my family through
+            consuming food, watching movies, and playing video games.
           </p>
+
           <SocialMedia />
         </div>
       </div>
