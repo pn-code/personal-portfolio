@@ -19,6 +19,7 @@ function App() {
     <Project 
       key={project.id}
       id={project.id} 
+      imgSrc={project.imgSrc}
       title={project.title}
       description={project.description}
       codeLink={project.codeLink}
@@ -60,6 +61,23 @@ function App() {
           <SocialMedia />
         </div>
       </div>
+      <div id="skills--section">
+        <div className='skills--info'>
+          <h2>Skills and Experience</h2>
+          <p>Currently, I am able to utilize...</p>
+        </div>
+        <ul className='skill--list'>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Firebase</li>
+        </ul>
+        <h2>Furthermore...</h2>
+        <p>I pride myself in being a fast and efficient learner, which means I can pick up 
+          new skills and hit the ground running.
+        </p>
+      </div>
       <div id='project--section'>
         <h2>My Projects</h2>
         <div className='projects--container'>
@@ -68,7 +86,7 @@ function App() {
       </div>
       <div id='contact--section'>
         <div className='contact--info'>
-          <h2>Contact Me</h2>
+          <h2>Contact</h2>
           <p>Please take some time to look at my projects above.</p>
           <p>If you think that our work together could be mutually beneficial, please feel free
              to reach out to me.</p>
@@ -80,6 +98,14 @@ function App() {
         </div>
         <img className='profile-picture' src={profilePic} alt='profile'/>
       </div>
+      <footer>
+        <a 
+          href='https://github.com/pn-code' 
+          target="_blank" 
+          rel="noreferrer">
+          Created by Philip Nguyen
+        </a>
+      </footer>
     </div>
   );
 }

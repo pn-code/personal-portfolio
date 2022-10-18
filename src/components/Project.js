@@ -4,7 +4,9 @@ import webIcon from "../img/web-icon.svg";
 const Project = (props) => {
     return (
         <div className="project">
-            <img src={props.imgSrc} alt={props.title}/>
+            <div className="project-img--container">
+                <img className="project-img" src={props.imgSrc} alt={props.title}/>
+            </div>
             <div className="project--info">
                 <h3>{props.title}</h3>
                 <p>{props.description}</p>
