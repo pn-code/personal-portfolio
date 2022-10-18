@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from "react-helmet"
 import './App.css';
 import SocialMedia from './components/SocialMedia';
 import Project from './components/Project';
@@ -33,12 +34,18 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>Philip's Portfolio</title>
+        <meta name='description' content="Philip Nguyen's Personal Portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Helmet>
       <header>
         <nav id='navbar'>
           <ul>
             <li><a href='#about--section'>About Me</a></li>
+            <li><a href='#skills--section'>Skills</a></li>
             <li><a href='#project--section'>My Projects</a></li>
-            <li><a href='#contact--section'>Contact Me</a></li>
+            <li><a href='#contact--section'>Contact</a></li>
           </ul>
         </nav>
       <div id="name--section">

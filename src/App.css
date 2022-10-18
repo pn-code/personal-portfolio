@@ -101,6 +101,7 @@ h2 {
 }
 
 #skills--section {
+  padding-top: 8%;
   margin-left: 12%;
   max-width: 70%;
 }
@@ -133,6 +134,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-bottom: 20%;
+  padding-top: 50px;
 }
 
 #project--section h2 {
@@ -209,7 +211,7 @@ h2 {
 #project--section,
 #contact--section {
   margin-top: 8%;
-  padding-top: 8%;
+  padding-top: 4%;
   border-top: 8px var(--secondary-color) solid;
 }
 
