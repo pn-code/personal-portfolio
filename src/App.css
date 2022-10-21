@@ -25,10 +25,24 @@ body {
 }
 
 #navbar h1 {
+  text-align: center;
   margin-left: 10%;
   font-size: 2rem;
   min-width: 220px;
   color: white;
+  padding-block: 8px;
+  padding-inline: 24px;
+  border-radius: 20px;
+}
+
+#navbar h1:hover {
+  font-weight: 700;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+#navbar h1:hover {
+  cursor: pointer;
 }
 
 #navbar ul {
@@ -131,6 +145,7 @@ h2 {
 }
 
 #skills--section {
+  padding-top: 3%;
   margin-inline: 10%;
 }
 
@@ -145,6 +160,7 @@ h2 {
   justify-content: center;
   list-style: none;
   margin-top: 10vh;
+  margin-bottom: 10vh;
   display: flex;
   gap: 5%
 }
@@ -169,11 +185,6 @@ h2 {
   margin-bottom: 20%;
 }
 
-#project--section h2 {
-  margin-bottom: 0;
-  padding: 20px;
-}
-
 #project--section h3 {
   font-size: 1.7rem;
   font-weight: 800;
@@ -191,7 +202,6 @@ h2 {
   gap: 50px;
   border-radius: 12px;
   padding-top: 3%;
-  padding-bottom: 10%;
 }
 
 .project {
@@ -253,24 +263,9 @@ h2 {
   filter: invert(100%) sepia(100%) saturate(15%) hue-rotate(228deg) brightness(102%) contrast(100%);
 }
 
-/* .see-all-projects {
-  text-decoration: none;
-  background-color: #1e3a8a;
-  padding-inline: 3%;
-  padding-block: 1%;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: white;
-  border-radius: 20px;
-  text-align: center;
-  width: 10%;
-  right: 30%;
-} */
-
 #project--section,
 #contact--section {
-  margin-top: 4%;
-  padding-top: 4%;
+  padding-top: 5%;
   border-top: 8px var(--secondary-color) solid;
 }
 
@@ -294,6 +289,8 @@ h2 {
   color: var(--secondary-color);
 }
 
+
+
 .contact--info h2 {
   margin-top: 1%;
 }
@@ -308,7 +305,7 @@ h2 {
 .email--info {
   display: flex;
   align-items: center;
-  gap: 2%;
+  gap: 8px;
   margin-bottom: 3%;
   min-height: 100px;
 }
@@ -349,6 +346,12 @@ h2 {
   padding-right: 2%;
 }
 
+.contact-img {
+  min-width: 10%;
+  border: black solid 4px;
+  border-radius: 20px;
+}
+
 footer {
   position: fixed;
   left: 0;
@@ -364,12 +367,11 @@ footer a {
   color: var(--primary-color);
   font-size: 1.25rem;
   font-weight: 600;
-  padding-block: .1%;
   padding-inline: 1%;
   border-radius: 12px;
 }
 
 footer a:hover {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   background-color: var(--primary-color);
 }

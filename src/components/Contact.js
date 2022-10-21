@@ -18,7 +18,7 @@ export default function Contact() {
                     <button onClick={copyEmail} id='email-btn'>philipnguyen953@gmail.com</button>
                 </div>
             </div>
-            <img className='profile-picture' src={profilePic} alt='profile'/>
+            <img className="contact-img" src={profilePic} alt='profile'/>
         </div>
     )
 }
