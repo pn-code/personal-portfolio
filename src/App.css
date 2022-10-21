@@ -14,6 +14,11 @@ body {
   background-color: #f1f5f9;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
 #navbar {
   display: flex;
   align-items: center;
@@ -26,12 +31,11 @@ body {
 
 #navbar h1 {
   text-align: center;
-  margin-left: 10%;
   font-size: 2rem;
-  min-width: 220px;
   color: white;
-  padding-block: 8px;
-  padding-inline: 24px;
+  min-width: 120%;
+  margin-left: 10%;
+  padding-block: 2%;
   border-radius: 20px;
 }
 
@@ -46,10 +50,10 @@ body {
 }
 
 #navbar ul {
-  margin-right: 2%;
+  margin-right: 24vh;
   display: flex;
+  gap: 10%;
   align-items: center;
-  justify-content: space-around;
   list-style: none;
 }
 
@@ -58,8 +62,8 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: white;
-  padding-block: 16px;
-  padding-inline: 24px;
+  padding-block: 8%;
+  padding-inline: 10%;
   border-radius: 12px;
 }
 
@@ -94,9 +98,9 @@ h2 {
 
 #about--section {
   display: flex;
-  justify-content: center;
-  flex: 1 1 auto;
-  gap: 4%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8%;
   padding: 10% 10% 10% 10%;
   border-bottom: 8px solid var(--secondary-color);
   padding-bottom: 13%;
@@ -127,7 +131,7 @@ h2 {
 }
 
 .about--info {
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .about--info p {
@@ -136,12 +140,8 @@ h2 {
 }
 
 .profile-picture {
-  display: flex;
-  flex: 1 1 auto;
-  min-width: 30%;
-  height: auto;
-  border: 6px solid;
-  border-radius: 8px;
+  object-fit: contain;
+  max-width: 50%;
 }
 
 #skills--section {
@@ -150,7 +150,7 @@ h2 {
 }
 
 #skills--section p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -289,8 +289,6 @@ h2 {
   color: var(--secondary-color);
 }
 
-
-
 .contact--info h2 {
   margin-top: 1%;
 }
@@ -374,4 +372,48 @@ footer a {
 footer a:hover {
   color: var(--tertiary-color);
   background-color: var(--primary-color);
+}
+
+@media (max-width: 1000px) {
+  #navbar h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    margin-top: 5vh;
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .about--info {
+    min-width: 100%;
+  }
+
+  #about--section #resume {
+    font-size: 1rem;
+    margin-bottom: 5%;
+    margin-left: 22%;
+  }
+
+  .profile-picture {
+    margin-left: 8%;
+    min-width: 80%;
+  }
+
+  #contact--section {
+    flex-wrap: wrap;
+  }
+
+  .contact--info {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  footer {
+    visibility: hidden;
+  }
 }

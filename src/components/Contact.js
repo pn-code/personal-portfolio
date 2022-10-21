@@ -10,15 +10,13 @@ export default function Contact() {
         <div id='contact--section'>
             <div className='contact--info'>
                 <h2>Contact</h2>
-                <p>Please take some time to look at my projects above.</p>
-                <p>If you think that our work together could be mutually beneficial, please feel free
-                    to reach out to me.</p>
+                <p>Please feel free to reach out to me if you have any questions.</p>
                 <div className='email--info'>
                     <img src={emailIcon} alt='email icon'/>
                     <button onClick={copyEmail} id='email-btn'>philipnguyen953@gmail.com</button>
                 </div>
             </div>
-            <img className="contact-img" src={profilePic} alt='profile'/>
+            <img className="contact-img" src={profilePic} alt='contact'/>
         </div>
     )
 }
