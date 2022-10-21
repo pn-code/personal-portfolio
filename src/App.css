@@ -376,13 +376,20 @@ footer a:hover {
 
 @media (max-width: 1000px) {
   #navbar h1 {
+    margin-left: 15%;
     font-size: 1.5rem;
+    min-width: 200%;
+    padding: 20%;
   }
 
   h2 {
-    margin-top: 5vh;
+    margin-top: 12vh;
     margin-bottom: 0;
     font-size: 2rem;
+  }
+
+  #navbar ul {
+    visibility: hidden;
   }
 
   p {
@@ -394,23 +401,26 @@ footer a:hover {
   }
 
   #about--section #resume {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 5%;
     margin-left: 22%;
   }
 
   .profile-picture {
-    margin-left: 8%;
+    margin-left: 10%;
     min-width: 80%;
   }
 
   #contact--section {
+    padding: 0;
+
     flex-wrap: wrap;
   }
 
   .contact--info {
     width: 100%;
-    margin-bottom: 5%;
+    margin-block: 5%;
+    margin-inline: 4%;
   }
 
   footer {

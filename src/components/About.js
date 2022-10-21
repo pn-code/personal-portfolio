@@ -6,7 +6,7 @@ export default function About() {
         <div id='about--section'>
           <div className='about--info'>
             <h2>About</h2>
-            <p>I am a self-taught Front-End Web Developer from Southern California. I am a life-long learner who loves to work hard.
+            <p>I am a self-taught Front-End Web Developer from Southern California. 
               <br/>
               <br/>
               Outside of development, I enjoy spending time with my family, exercising, and reading.
