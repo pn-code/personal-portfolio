@@ -19,8 +19,7 @@ export default function About() {
               View Resume
             </a>
           </div>
-
-            <img class='profile-picture' src={profilePic} alt="Duck"/>
+          <img class='profile-picture' src={profilePic} alt="Duck"/>
 
       </div>
     )
