@@ -1,11 +1,13 @@
 import React from 'react';
 import { Helmet } from "react-helmet"
 import './App.css';
-import SocialMedia from './components/SocialMedia';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
 import Project from './components/Project';
 import projectData from './projectData';
-import profilePic from './img/profile-picture.jpg';
-import emailIcon from './img/email-icon.svg';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -27,84 +29,19 @@ function App() {
       livePreview={project.livePreview}
     />)
 
-  const copyEmail = (e) => {
-    navigator.clipboard.writeText(e.target.textContent);
-    alert("Email has been copied.")
-  }
-
   return (
     <div className="App">
       <Helmet>
-        <title>Philip's Portfolio</title>
-        <meta name='description' content="Philip Nguyen's Personal Portfolio" />
+        <title>Philip Nguyen</title>
+        <meta name='description' content="Philip Nguyen's Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
       </Helmet>
-      <header>
-        <nav id='navbar'>
-          <ul>
-            <li><a href='#about--section'>About Me</a></li>
-            <li><a href='#skills--section'>Skills</a></li>
-            <li><a href='#project--section'>My Projects</a></li>
-            <li><a href='#contact--section'>Contact</a></li>
-          </ul>
-        </nav>
-      <div id="name--section">
-        <h1>Philip Nguyen</h1>
-      </div>
-      </header>
-
-      <div id='about--section'>
-        <img class='profile-picture' src={profilePic} alt="Duck"/>
-        <div className='about--info'>
-          <h2>About Me</h2>
-          <p>I am a Front-End Web Developer from Southern California. I love to learn and work
-            on all sorts of projects. 
-            <br/>
-            <br/>
-            In my free time, I love spend time with my family through
-            consuming food, watching movies, and playing video games.
-          </p>
-
-          <SocialMedia />
-        </div>
-      </div>
-      <div id="skills--section">
-        <div className='skills--info'>
-          <h2>Skills and Experience</h2>
-          <p>Currently, I am able to utilize...</p>
-        </div>
-        <ul className='skill--list'>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Firebase</li>
-        </ul>
-        <h2>Furthermore...</h2>
-        <p>I pride myself in being a fast and efficient learner, which means I can pick up 
-          new skills and hit the ground running.
-        </p>
-      </div>
-      <div id='project--section'>
-        <h2>My Projects</h2>
-        <div className='projects--container'>
-          {projectElements}
-        </div>
-      </div>
-      <div id='contact--section'>
-        <div className='contact--info'>
-          <h2>Contact</h2>
-          <p>Please take some time to look at my projects above.</p>
-          <p>If you think that our work together could be mutually beneficial, please feel free
-             to reach out to me.</p>
-          <div className='email--info'>
-            <img src={emailIcon} alt='email icon'/>
-            <button onClick={copyEmail} id='email-btn'>philipnguyen953@gmail.com</button>
-          </div>
-          <SocialMedia />
-        </div>
-        <img className='profile-picture' src={profilePic} alt='profile'/>
-      </div>
+    <Navbar />
+    <About />
+    <Skills />
+    <Projects projectElements={projectElements}/>
+    <Contact />
       <footer>
         <a 
           href='https://github.com/pn-code' 

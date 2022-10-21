@@ -11,8 +11,18 @@ const Project = (props) => {
                 <h3>{props.title}</h3>
                 <p>{props.description}</p>
                 <div className="project--links">
-                    <a target="_blank" rel="noreferrer" href={props.codeLink}><img src={linkIcon} alt="link icon"/></a>
-                    <a target="_blank" rel="noreferrer" href={props.livePreview}><img src={webIcon} alt="web application icon"/></a>
+                    <a 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        href={props.codeLink}>
+                        <img src={linkIcon} alt="link icon"/>
+                    </a>
+                    <a 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        href={props.livePreview}>
+                            <img src={webIcon} alt="web application icon"/>
+                    </a>
                 </div>
             </div>
         </div>
