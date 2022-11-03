@@ -41,10 +41,12 @@ function App() {
         <link rel="icon" href={titleIcon} type="svg"/>
       </Helmet>
     <Navbar />
-    <About />
-    <Skills />
-    <Projects projectElements={projectElements}/>
-    <Contact />
+    <main className='main'>
+      <About />
+      <Skills />
+      <Projects projectElements={projectElements}/>
+      <Contact />
+    </main>
     <Footer />
     </div>
   );
